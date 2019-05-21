@@ -1,0 +1,509 @@
+body {
+    height: 1vh;
+    background-color: #CCFFFF;
+}
+
+/* headerここから */
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    font-style: italic;
+}
+
+/* headerここまで */
+
+/* 頭ここから */
+.mage {
+    margin-top: 20px;
+}
+
+.top {
+    display: flex;
+    justify-content: center
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid black;
+}
+
+.bottom {
+    margin: 0 auto;
+    height: 35px;
+    width: 200px;
+    border-radius: 0 0 40px 40px;
+    background-color: black;
+}
+
+.mage-red li {
+    margin: 0 auto;
+    height: 15px;
+    width: 55px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    background-color: red;
+}
+
+/* ここから顔 */
+.head {
+    margin: 0 auto;
+    height: 420px;
+    width: 420px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: #FFCC99;
+    position: relative;
+}
+
+.eyes { 
+    display: flex;
+    justify-content: center;
+}
+
+.left-white {
+    height: 120px;
+    width: 100px;
+    margin-top: 80px;
+    background-color: #fff;
+    border: 5px solid #000;
+    border-radius: 50%;
+}
+
+.right-white {
+    height: 120px;
+    width: 100px;
+    margin-top: 80px;
+    background-color: #fff;
+    border: 5px solid #000;
+    border-radius: 50%;
+}
+
+.left-black {
+    height: 40px;
+    width: 35px;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.right-black p {
+    margin-top: 35px;
+    margin-left: 5px;
+    color: #000;
+    font-size: 50px;
+}
+
+.nose {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.mouth {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 90px;
+    width: 250px;
+    border: 5px solid black;
+    border-radius: 0 0 110px 110px;
+    background-color: red;
+}
+
+.tongue {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 45px;
+    width: 110px;
+    border: 5px solid black;
+    border-bottom: none;
+    border-radius: 80px 80px 0 0;
+    background-color: pink;
+}
+
+/* ここまで顔 */
+
+/* 吹き出しここから */
+
+.balloon {
+    padding: 7px 10px;
+    background: #FFEEFF;
+    border: solid 3px #FF66FF;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.balloon:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-left: 12px solid #FFEEFF;
+    z-index: 2;
+}
+
+.balloon:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    margin-top: -14px;
+    border: 14px solid transparent;
+    border-left: 14px solid #FF66FF;
+    z-index: 1;
+}
+
+.balloon:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-right: 12px solid #FFEEFF;
+    z-index: 2;
+}
+
+.balloon:nth-child(even)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -14px;
+    border: 14px solid transparent;
+    border-right: 14px solid #FF66FF;
+    z-index: 1;
+}
+
+.balloon p {
+    color: #FF66FF;
+    font-size: 30px;
+}
+
+.lyrics1 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+}
+
+.lyrics2 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
+.lyrics3 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+}
+
+.lyrics4 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+}
+
+.lyrics5 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
+}
+
+.lyrics6 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+}
+
+.lyrics7 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+}
+
+.lyrics8 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    right: 2%;
+}
+
+.lyrics9 {
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    left: 4%;
+}
+
+/* 吹き出しここまで */
+
+/* ここからsingボタン */
+.sing {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sing span {
+    font-size: 50px;
+    color: red;
+    font-family: 'Impact',sans-serif;
+}
+
+.sing span i{
+    cursor: pointer;
+    color: gray;
+}
+
+.sing span i:hover {
+    color: red;
+}
+
+/* ここからmain */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    width: 50%;
+    margin: 10% 0 10% 0;
+}
+
+/* ここからfotter */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+
+footer button {
+    background-color: #CCFFFF;
+    font-size: 50px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer button a:hover {
+    color: red;
+}
+
+footer button a {
+    color: orange;
+    text-decoration: none;
+}
+
+/* ここからanimation */
+.swing {
+    animation: swing 8s linear infinite;
+}
+
+@keyframes swing {
+    25% {
+        transform: rotate(30deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* レスポンシブデザイン（スマホ用） */
+@media (max-width: 750px) {
+
+    /* ここからheader */
+    h1 {
+        font-size: 28px;
+    }
+
+    /* ここから頭 */
+    .mage {
+        margin-top: 30px;
+    }
+    
+    .triangle {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid black;
+    }
+    
+    .bottom {
+        height: 20px;
+        width: 80px;
+        border-radius: 0 0 25px 25px;
+    }
+    
+    .mage-red li {
+        height: 8px;
+        width: 25px;
+        border: 2px solid #000;
+    }
+    
+    /* ここから顔 */
+    .head {
+        height: 215px;
+        width: 215px;
+        border: 2px solid #000;
+    }
+    
+    .left-white {
+        height: 65px;
+        width: 50px;
+        margin-top: 20%;
+        border: 2px solid #000;
+    }
+    
+    .right-white {
+        height: 65px;
+        width: 50px;
+        margin-top: 20%;
+        border: 2px solid #000;
+    }
+    
+    .left-black {
+        height: 20px;
+        width: 15px;
+        margin-top: 50%;
+        margin-left: 55%;
+    }
+    
+    .right-black p {
+        margin-top: 45%;
+        margin-left: 8%;
+        font-size: 25px;
+    }
+    
+    .nose {
+        position: absolute;
+        top: 48%;
+        height: 18px;
+        width: 18px;
+        border: 2px solid #000;
+    }
+    
+    .mouth {
+        top: 63%;
+        left: 0;
+        right: 0;
+        height: 37px;
+        width: 100px;
+        border: 2px solid black;
+    }
+    
+    .tongue {
+        height: 20px;
+        width: 45px;
+        border: 2px solid black;
+    }
+    
+    /* ここから歌詞 */
+    .balloon {
+        padding: 10px 5px;
+        border: solid 3px #FF66FF;
+        border-radius: 10px;
+    }
+
+    .balloon p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .lyrics1 {
+        bottom: 25%;
+        left: 3%;
+    }
+    
+    .lyrics2 {
+        bottom: 25%;
+        right: 3%;
+    }
+    
+    .lyrics3 {
+        bottom: 25%;
+        left: 2%;
+        width: 130px
+    }
+    
+    .lyrics4 {
+        bottom: 25%;
+        right: 3%;
+    }
+    
+    .lyrics5 {
+        bottom: 25%;
+        left: 3%;
+    }
+    
+    .lyrics6 {
+        bottom: 25%;
+        right: 3%;
+    }
+    
+    .lyrics7 {
+        bottom: 25%;
+        left: 2%;
+        width: 130px
+    }
+    
+    .lyrics8 {
+        bottom: 25%;
+        right: 2%;
+        width: 138px
+    }
+    
+    .lyrics9 {
+        bottom: 25%;
+        left: 2%;
+        width: 130px
+    }
+
+    /* ここからsingボタン */
+    .sing {
+        margin-top: 70px;
+    }
+
+    .sing span {
+        font-size: 35px;
+    }
+
+    .sing span i{
+        font-size: 40px;
+    }
+}
