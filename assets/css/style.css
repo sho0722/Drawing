@@ -7,8 +7,10 @@ body {
 
 header {
     width: 100%;
-    padding: 10px;
     background-color: orange;
+}
+
+h1 {
     color: #fff;
     text-align: center;
     font-size: 70px;
@@ -17,7 +19,25 @@ header {
 
 /* headerここまで */
 
+/* ここからsidebar */
+.sidebar {
+    background-image: url(../img/dd_dot_02.jpg);
+}
+
+/* ボタンここから */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
 /* 頭ここから */
+
 .mage {
     margin-top: 20px;
 }
@@ -41,6 +61,10 @@ header {
     width: 200px;
     border-radius: 0 0 40px 40px;
     background-color: black;
+}
+
+.mage-red ul {
+    margin-bottom: 0;
 }
 
 .mage-red li {
@@ -95,11 +119,19 @@ header {
     border-radius: 50%;
 }
 
-.right-black p {
-    margin-top: 35px;
+.right-black {
+    height: 40px;
+    width: 35px;
+    margin-top: 40px;
     margin-left: 5px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.right-black p, .left-black p {
     color: #000;
     font-size: 50px;
+    margin-top: -15px;
 }
 
 .nose {
@@ -206,63 +238,63 @@ header {
 .lyrics1 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     left: 7%;
 }
 
 .lyrics2 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     right: 10%;
 }
 
 .lyrics3 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     left: 2%;
 }
 
 .lyrics4 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     right: 8%;
 }
 
 .lyrics5 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     left: 7%;
 }
 
 .lyrics6 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     right: 10%;
 }
 
 .lyrics7 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     left: 2%;
 }
 
 .lyrics8 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     right: 2%;
 }
 
 .lyrics9 {
     display: none;
     position: absolute;
-    bottom: 15%;
+    bottom: 0;
     left: 4%;
 }
 
@@ -270,6 +302,10 @@ header {
 
 /* ここからsingボタン */
 .sing {
+    display: none;
+}
+
+.sing div {
     display: flex;
     justify-content: center;
     margin: 10px;

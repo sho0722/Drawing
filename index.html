@@ -7,100 +7,123 @@
     <title>キテレツ大百科</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- ここからheader -->
-    <header>
-        <h1>ワガハイは武士ナリ！！</h1>
-    </header>
+    <div class="container-fluid">
+        <!-- ここからheader -->
+        <header>
+            <h1>ワガハイは武士ナリ！！</h1>
+        </header>
+        
+        <div class="row">
+            <div class="col-1 sidebar"></div>
+            <div class="col-10">
+                <div id="korosuke d-flex justify-content-center">
+                    <div class="buttons">
+                        <button id="wink-right" type="button" class="btn btn-outline-primary">Wink-Right</button>
+                        <button id="wink-left" type="button" class="btn btn-outline-success">Wink-Left</button>
+                        <button id="sing" type="button" class="btn btn-outline-danger">Sing</button>
+                        <button id="rotate" type="button" class="btn btn-outline-warning">Rotate</button>
+                        <button id="fadeout" type="button" class="btn btn-outline-info">Roll Out</button>
+                        <button id="fadein" type="button" class="btn btn-outline-dark">Roll In</button>
+                    </div>
+                    <!-- ここから頭 -->
+                    <div id="swing">
+                        <div class="mage">
+                            <div>
+                                <div class="top">
+                                    <div class="triangle"></div>
+                                    <div class="triangle"></div>
+                                    <div class="triangle"></div>
+                                    <div class="triangle"></div>
+                                </div>
+                                <div class="bottom"></div>
+                            </div>
+                            <div class="mage-red">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ここまで頭 -->
 
-    <div id="korosuke">
-        <!-- ここから頭 -->
-        <div class="mage">
-            <div>
-                <div class="top">
-                    <div class="triangle"></div>
-                    <div class="triangle"></div>
-                    <div class="triangle"></div>
-                    <div class="triangle"></div>
-                </div>
-                <div class="bottom"></div>
-            </div>
-            <div class="mage-red">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-        <!-- ここまで頭 -->
-
-        <!-- ここから顔 -->
-        <div class="head">
-            <div class="eyes">
-                <div class="left-white">
-                    <div class="left-black"></div>
-                </div>
-                <div class="right-white">
-                    <div class="right-black">
-                        <p>＜</p>
+                        <!-- ここから顔 -->
+                        <div class="head">
+                            <div class="eyes">
+                                <div class="left-white">
+                                    <div class="left-black"></div>
+                                </div>
+                                <div class="right-white">
+                                    <div class="right-black">
+                                        <!-- <p>＜</p> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nose"></div>
+                            <div class="mouth">
+                                <div class="tongue"></div>
+                            </div>
+                        </div>
+                        <!-- ここまで顔 -->
                     </div>
                 </div>
             </div>
-            <div class="nose"></div>
-            <div class="mouth">
-                <div class="tongue"></div>
+            <div class="col-1 sidebar"></div>
+        </div>
+
+        <!-- ここから歌詞 -->
+        <div>
+            <div class="balloon balloon-right lyrics1">
+                <p>♪はじめてのChu♪</p>
+            </div>
+            <div class="balloon balloon-left lyrics2">
+                <p>♪キミとChu♪</p>
+            </div>
+            <div class="balloon balloon-right lyrics3">
+                <p>♪I will give you all my love♪</p>
+            </div>
+            <div class="balloon balloon-left lyrics4">
+                <p>♪なぜかやさしい<br>気持ちがいっぱい♪</p>
+            </div>
+            <div class="balloon balloon-right lyrics5">
+                <p>♪はじめてのChu♪</p>
+            </div>
+            <div class="balloon balloon-left lyrics6">
+                <p>♪キミとChu♪</p>            
+            </div>
+            <div class="balloon balloon-right lyrics7">
+                <p>♪I will give you all my love♪</p>
+            </div>
+            <div class="balloon balloon-left lyrics8">
+                <p>♪なみだが出ちゃう男のくせに♪</p>
+            </div>
+            <div class="balloon balloon-right lyrics9">
+                <p>♪Be in love with you♪</p>
             </div>
         </div>
-        <!-- ここまで顔 -->
+        <!-- ここまで歌詞 -->
+
+        <!-- ここからマイクアイコン -->
+        <div class="sing">
+            <div>
+                <span> 
+                    Let's<i id="microphone" class="fas fa-microphone-alt fa-2x fa-fw"></i>Sing!
+                </span>
+            </div>
+        </div>
+        <!-- ここまでマイクアイコン -->
+
+        <!-- 音声ファイル -->
+        <audio src="assets/hajimetenochu.mp3" id="audio"></audio>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/js/jQueryRotate.js"></script>
+        <script src="assets/js/app.js"></script>
     </div>
-
-    <!-- ここから歌詞 -->
-    <div>
-        <div class="balloon balloon-right lyrics1">
-            <p>♪はじめてのChu♪</p>
-        </div>
-        <div class="balloon balloon-left lyrics2">
-            <p>♪キミとChu♪</p>
-        </div>
-        <div class="balloon balloon-right lyrics3">
-            <p>♪I will give you all my love♪</p>
-        </div>
-        <div class="balloon balloon-left lyrics4">
-            <p>♪なぜかやさしい<br>気持ちがいっぱい♪</p>
-        </div>
-        <div class="balloon balloon-right lyrics5">
-            <p>♪はじめてのChu♪</p>
-        </div>
-        <div class="balloon balloon-left lyrics6">
-            <p>♪キミとChu♪</p>            
-        </div>
-        <div class="balloon balloon-right lyrics7">
-            <p>♪I will give you all my love♪</p>
-        </div>
-        <div class="balloon balloon-left lyrics8">
-            <p>♪なみだが出ちゃう男のくせに♪</p>
-        </div>
-        <div class="balloon balloon-right lyrics9">
-            <p>♪Be in love with you♪</p>
-        </div>
-    </div>
-    <!-- ここまで歌詞 -->
-
-    <!-- ここからマイクアイコン -->
-    <div class="sing">
-        <span> 
-            Let's<i id="microphone" class="fas fa-microphone-alt fa-2x fa-fw"></i>Sing!
-        </span>
-    </div>
-    <!-- ここまでマイクアイコン -->
-
-    <!-- 音声ファイル -->
-    <audio src="assets/hajimetenochu.mp3" id="audio"></audio>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="assets/js/app.js"></script>
 </body>
 </html>
